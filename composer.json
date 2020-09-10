@@ -1,17 +1,23 @@
 {
-    "name": "spatie/laravel-sluggable",
+    "name": "aminetiyal/laravel-sluggable",
     "description": "Generate slugs when saving Eloquent models",
     "keywords": [
         "spatie",
         "laravel-sluggable"
     ],
-    "homepage": "https://github.com/spatie/laravel-sluggable",
+    "homepage": "https://github.com/aminetiyal/laravel-sluggable",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Amine TIYAL",
+            "email": "aminetiyal@gmail.com",
+            "homepage": "https://aminetiyal.com",
             "role": "Developer"
         }
     ],
