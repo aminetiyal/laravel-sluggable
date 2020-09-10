@@ -13,6 +13,9 @@ class SlugOptions
 
     public int $maximumLength = 250;
 
+    /** Store fields that will be unique with Slug @var array */
+    public $uniqueWith = [];
+
     public bool $generateSlugsOnCreate = true;
 
     public bool $generateSlugsOnUpdate = true;
@@ -56,6 +59,23 @@ class SlugOptions
     public function saveSlugsTo(string $fieldName): self
     {
         $this->slugField = $fieldName;
+
+        return $this;
+    }
+
+    /**
+     * @param mixed $fields
+     *
+     * @return \Spatie\Sluggable\SlugOptions
+     */
+    public function uniqueWith($fields): self
+    {
+        if (is_string($fields)) {
+            $fields = [$fields];
+        }
+
+        // Store fields that will be unique with slug
+        $this->uniqueWith = $fields;
 
         return $this;
     }
