@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Sluggable\Tests;
+namespace Aminetiyal\Sluggable\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\HasSlug;
+use Aminetiyal\Sluggable\SlugOptions;
 
 class TestModelSoftDeletes extends Model
 {

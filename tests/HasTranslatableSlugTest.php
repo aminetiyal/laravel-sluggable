@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Sluggable\Tests;
+namespace Aminetiyal\Sluggable\Tests;
 
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\SlugOptions;
 
 class HasTranslatableSlugTest extends TestCase
 {

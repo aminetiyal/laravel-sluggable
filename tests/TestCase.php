@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Sluggable\Tests;
+namespace Aminetiyal\Sluggable\Tests;
 
 use File;
 use Illuminate\Database\Schema\Blueprint;
@@ -9,7 +9,7 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
-    /** @var \Spatie\Sluggable\Tests\TestModel */
+    /** @var \Aminetiyal\Sluggable\Tests\TestModel */
     protected $testModel;
 
     public function setUp(): void

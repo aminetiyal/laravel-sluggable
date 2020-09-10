@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Sluggable;
+namespace Aminetiyal\Sluggable;
 
 class SlugOptions
 {
@@ -43,7 +43,7 @@ class SlugOptions
     /**
      * @param string|array|callable $fieldName
      *
-     * @return \Spatie\Sluggable\SlugOptions
+     * @return \Aminetiyal\Sluggable\SlugOptions
      */
     public function generateSlugsFrom($fieldName): self
     {
@@ -66,7 +66,7 @@ class SlugOptions
     /**
      * @param mixed $fields
      *
-     * @return \Spatie\Sluggable\SlugOptions
+     * @return \Aminetiyal\Sluggable\SlugOptions
      */
     public function uniqueWith($fields): self
     {

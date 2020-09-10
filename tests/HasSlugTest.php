@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Sluggable\Tests;
+namespace Aminetiyal\Sluggable\Tests;
 
 use Illuminate\Support\Str;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\SlugOptions;
 
 class HasSlugTest extends TestCase
 {

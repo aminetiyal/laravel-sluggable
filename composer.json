@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Sluggable\\": "src"
+            "Aminetiyal\\Sluggable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Sluggable\\Tests\\": "tests"
+            "Aminetiyal\\Sluggable\\Tests\\": "tests"
         }
     },
     "scripts": {

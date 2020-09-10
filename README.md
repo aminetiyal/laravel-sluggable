@@ -38,7 +38,7 @@ composer require spatie/laravel-sluggable
 
 ## Usage
 
-Your Eloquent models should use the `Spatie\Sluggable\HasSlug` trait and the `Spatie\Sluggable\SlugOptions` class.
+Your Eloquent models should use the `Aminetiyal\Sluggable\HasSlug` trait and the `Aminetiyal\Sluggable\SlugOptions` class.
 
 The trait contains an abstract method `getSlugOptions()` that you must implement yourself.
 
@@ -49,8 +49,8 @@ Here's an example of how to implement the trait:
 ```php
 namespace App;
 
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\HasSlug;
+use Aminetiyal\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class YourEloquentModel extends Model
@@ -101,8 +101,8 @@ To use the generated slug in routes, remember to use Laravel's [implicit route m
 ```php
 namespace App;
 
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\HasSlug;
+use Aminetiyal\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class YourEloquentModel extends Model
@@ -265,8 +265,8 @@ You can use this package along with [laravel-translatable](https://github.com/sp
 ```php
 namespace App;
 
-use Spatie\Sluggable\HasTranslatableSlug;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\HasTranslatableSlug;
+use Aminetiyal\Sluggable\SlugOptions;
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Model;
 
@@ -293,8 +293,8 @@ For slugs that are generated from a callable, you need to instantiate the `SlugO
 ```php
 namespace App;
 
-use Spatie\Sluggable\HasTranslatableSlug;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\HasTranslatableSlug;
+use Aminetiyal\Sluggable\SlugOptions;
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Model;
 

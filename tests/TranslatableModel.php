@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Sluggable\Tests;
+namespace Aminetiyal\Sluggable\Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Sluggable\HasTranslatableSlug;
-use Spatie\Sluggable\SlugOptions;
+use Aminetiyal\Sluggable\HasTranslatableSlug;
+use Aminetiyal\Sluggable\SlugOptions;
 use Spatie\Translatable\HasTranslations;
 
 class TranslatableModel extends Model

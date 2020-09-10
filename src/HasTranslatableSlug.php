@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Sluggable;
+namespace Aminetiyal\Sluggable;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Localizable;
