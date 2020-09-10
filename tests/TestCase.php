@@ -20,32 +20,28 @@ abstract class TestCase extends Orchestra
     }
 
     /**
-     * @param Application $app
-     */
-    protected function getEnvironmentSetUp($app)
-    {
-        $this->initializeDirectory($this->getTempDirectory());
-
-        $app['config']->set('database.default', 'sqlite');
-        $app['config']->set('database.connections.sqlite', [
-            'driver' => 'sqlite',
-            'database' => $this->getTempDirectory().'/database.sqlite',
-            'prefix' => '',
-        ]);
-    }
-
-    /**
      * @param  $app
      */
     protected function setUpDatabase(Application $app)
     {
-        file_put_contents($this->getTempDirectory().'/database.sqlite', null);
+        $app['config']->set('database.default', 'testing_database');
+        $app['config']->set('database.connections.testing_database', [
+            'driver' => 'sqlite',
+            'database' => ':memory:'
+        ]);
 
         $app['db']->connection()->getSchemaBuilder()->create('test_models', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('other_field')->nullable();
             $table->string('url')->nullable();
+        });
+
+        $app['db']->connection()->getSchemaBuilder()->create('unique_with_test_models', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name')->nullable();
+            $table->string('type')->nullable();
+            $table->string('slug')->nullable();
         });
 
         $app['db']->connection()->getSchemaBuilder()->create('test_model_soft_deletes', function (Blueprint $table) {
@@ -63,18 +59,5 @@ abstract class TestCase extends Orchestra
             $table->text('non_translatable_field')->nullable();
             $table->text('slug')->nullable();
         });
-    }
-
-    protected function initializeDirectory(string $directory)
-    {
-        if (File::isDirectory($directory)) {
-            File::deleteDirectory($directory);
-        }
-        File::makeDirectory($directory);
-    }
-
-    public function getTempDirectory(): string
-    {
-        return __DIR__.'/temp';
     }
 }
