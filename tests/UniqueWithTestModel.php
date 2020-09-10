@@ -2,9 +2,9 @@
 
 namespace Aminetiyal\Sluggable\Tests;
 
-use Illuminate\Database\Eloquent\Model;
 use Aminetiyal\Sluggable\HasSlug;
 use Aminetiyal\Sluggable\SlugOptions;
+use Illuminate\Database\Eloquent\Model;
 
 class UniqueWithTestModel extends Model
 {

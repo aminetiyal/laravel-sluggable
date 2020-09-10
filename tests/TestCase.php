@@ -2,7 +2,6 @@
 
 namespace Aminetiyal\Sluggable\Tests;
 
-use File;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as Orchestra;
@@ -27,7 +26,7 @@ abstract class TestCase extends Orchestra
         $app['config']->set('database.default', 'testing_database');
         $app['config']->set('database.connections.testing_database', [
             'driver' => 'sqlite',
-            'database' => ':memory:'
+            'database' => ':memory:',
         ]);
 
         $app['db']->connection()->getSchemaBuilder()->create('test_models', function (Blueprint $table) {

@@ -2,9 +2,9 @@
 
 namespace Aminetiyal\Sluggable\Tests;
 
-use Illuminate\Database\Eloquent\Model;
 use Aminetiyal\Sluggable\HasTranslatableSlug;
 use Aminetiyal\Sluggable\SlugOptions;
+use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
 
 class TranslatableModel extends Model

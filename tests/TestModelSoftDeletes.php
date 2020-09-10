@@ -2,10 +2,10 @@
 
 namespace Aminetiyal\Sluggable\Tests;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Aminetiyal\Sluggable\HasSlug;
 use Aminetiyal\Sluggable\SlugOptions;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class TestModelSoftDeletes extends Model
 {

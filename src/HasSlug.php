@@ -126,7 +126,7 @@ trait HasSlug
 
         $query = static::where($this->slugOptions->slugField, $slug);
 
-         // check if generateUniqueSlugs is true and uniqueWith array not empty
+        // check if generateUniqueSlugs is true and uniqueWith array not empty
         if (count($this->slugOptions->uniqueWith) > 0 && $this->slugOptions->generateUniqueSlugs) {
             // get column and value of each item of uniqueWith
             foreach ($this->slugOptions->uniqueWith as $column) {

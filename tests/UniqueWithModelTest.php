@@ -2,9 +2,6 @@
 
 namespace Aminetiyal\Sluggable\Tests;
 
-use Illuminate\Support\Str;
-use Aminetiyal\Sluggable\SlugOptions;
-
 class UniqueWithTestModelTest extends TestCase
 {
     /** @test */
