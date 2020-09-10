@@ -2,8 +2,8 @@
 
 namespace Aminetiyal\Sluggable\Tests;
 
-use Illuminate\Support\Str;
 use Aminetiyal\Sluggable\SlugOptions;
+use Illuminate\Support\Str;
 
 class HasSlugTest extends TestCase
 {
