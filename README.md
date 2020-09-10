@@ -1,9 +1,9 @@
 # Generate slugs when saving Eloquent models
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-sluggable)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/aminetiyal/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/aminetiyal/laravel-sluggable)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/spatie/laravel-sluggable/run-tests?label=tests)](https://github.com/spatie/laravel-sluggable/actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-sluggable)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aminetiyal/laravel-sluggable/run-tests?label=tests)](https://github.com/aminetiyal/laravel-sluggable/actions)
+[![Total Downloads](https://img.shields.io/packagist/dt/aminetiyal/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/aminetiyal/laravel-sluggable)
 
 This package provides a trait that will generate a unique slug when saving any Eloquent model.
 
